@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/sighup.css">
+    <title>Sigh Up</title>
+</head>
+<body>
+<form style="border:1px solid #ccc">
+    <div class="container">
+        <h1 class="center" style="color : #007fff;">Sign Up</h1>
+        <p class="center">Please fill in this form to create an account.</p>
+        <div class="center">
+            <input type="text" placeholder="Enter Email" name="email" required class="center">
+        </div>
+        <div class="center">
+            <input type="password" placeholder="Enter Password" name="psw" required class="center">
+        </div>
+        <div class="center">
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required class="center">
+        </div>
+        <label style="    font-size: 22px;">
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px; width: 15px; height: 15px;"> Remember me
+        </label>
+
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+        <div class="clearfix center">
+            <button type="button" class="cancelbtn" onclick="window.location.href = 'http://localhost:63342/peterprj/index.html'">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
