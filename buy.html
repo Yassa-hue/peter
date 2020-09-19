@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy</title>
+    <script src="https://kit.fontawesome.com/ac498b5828.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/buy.css">
+</head>
+<body style="height: 800px">
+<h1 class="center blue" id="title">
+    <i class="fas fa-shopping-cart"></i>
+    TALABATY
+</h1>
+<form style="border:1px solid #ccc">
+    <div class="container">
+        <h1 class="center" style="color : #007fff;">
+            Buy</h1>
+        <p class="center">Please fill in this form to buy.</p>
+        <div class="center">
+            <input type="number" placeholder="Credit Card Num" name="" required class="center" id="cdnum">
+            <div id="cdnumerr"></div>
+        </div>
+        <div class="center">
+            <input type="text" placeholder="Ex-Date" name="" required class="center" id="exdate">
+            <div id="exdateerr"></div>
+        </div>
+        <div class="center">
+            <input type="password" placeholder="Password" name="" required class="center" id="password">
+            <div id="passworderr"></div>
+        </div>
+        <p>By buying you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <div class="clearfix center">
+            <button type="button" class="cancelbtn" onclick="window.location.href = 'home.html'">Cancel</button>
+            <button type="submit" class="signupbtn" id="buy">buy</button>
+        </div>
+    </div>
+</form>
+<script src="js/buy.js"></script>
+</body>
+</html>

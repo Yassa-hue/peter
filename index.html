@@ -49,12 +49,14 @@
         </br>
         <div class="info">
             <i class="fas fa-envelope" style="margin-right: 10px;"></i>
-            <input type="text" placeholder="E_mail" alt="e_mail" style="border-radius: 10px; margin-bottom: 19px;" name="email">
+            <input type="text" placeholder="E_mail" alt="e_mail" id="email" style="border-radius: 10px; margin-bottom: 19px;" name="email">
+            <div id="emailErr"></div>
             </br>
             <i class="fas fa-lock" style="margin-right: 10px;"></i>
-            <input type= "password" placeholder="password" style="border-radius: 10px;  margin-bottom: 19px;" name="password">
+            <input type= "password" placeholder="password" style="border-radius: 10px;  margin-bottom: 19px;" name="password" id="password">
+            <div id="passwordErr"></div>
         </div>
-        <a class="login" href="home.html" style="width: 107px;display: inline-block;height: 40px;">log in</a>
+        <a class="login" href="" style="width: 107px;display: inline-block;height: 40px;" id="login">log in</a>
         <a class="login" href="reg.html"style="width: 107px;display: inline-block;height: 40px;">sigh up</a>
         </br>
         <input type="checkbox">
@@ -64,10 +66,12 @@
         </br>
             <a href= "file:///E:/peter.html? "target="blank" > talabaty</a>
     </form>
+    <a class="login" href="admin.html"style="width: 107px;display: inline-block;height: 40px;margin-left: 622px;margin-top: 10px;">Admin</a>
 </div>
 <div id="end">
     <a href="#">About Us</a>
     <a href="#" style="float: right;">Custom Services</a>
 </div>
+<script src="js/main.js"></script>
 </body>
 </HTML>

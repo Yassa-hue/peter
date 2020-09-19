@@ -1,24 +1,28 @@
-let name = document.getElementById("name"),
-    nameErr = document.getElementById("nameErr"),
+let password = document.getElementById("password"),
+    passwordErr = document.getElementById("passwordErr"),
     email = document.getElementById("email"),
-    emailErr = document.getElementById("emailErr");
+    emailErr = document.getElementById("emailErr"),
+    login = document.getElementById("login");
 function validateEmail (email) {
     let a = email.search(/@/),
         b = email.search(/.com/),
         c = email.search(/[0-9]/);
     return ((a > -1 && b > -1 && c > -1) && (a < b && c < a));
 }
-function validateName(name) {
-    return (name.length > 4
-        && name.search(/[0-9]/g) < 0
-    );
+function validatepassword(password) {
+    return (password.length >= 8);
 }
-name.onblur = function () {
-    let res = validateName(this.value)
+// function validateName(name) {
+//     return (name.length > 4
+//         && name.search(/[0-9]/g) < 0
+//     );
+// }
+password.onblur = function () {
+    let res = validatepassword(this.value)
     if (!res)
-        nameErr.innerHTML = "Invalid"
+        passwordErr.innerHTML = "Invalid"
     else
-        nameErr.innerHTML = ""
+        passwordErr.innerHTML = ""
 }
 email.onblur = function () {
     let res = validateEmail(this.value)
@@ -26,4 +30,11 @@ email.onblur = function () {
         emailErr.innerHTML = "Invalid"
     else
         emailErr.innerHTML = ""
+}
+
+login.onclick = function () {
+    if (validateEmail(email.value) && validatepassword(password.value))
+        this.href = 'home.html'
+    else
+        this.href = ''
 }

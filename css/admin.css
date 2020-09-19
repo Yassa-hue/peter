@@ -1,0 +1,30 @@
+#body{
+    direction: ltr;
+    background-color : #F8F4FF	;
+    /*background-repeat :none;*/
+    background-attachment: fixed;
+
+
+}
+h1{
+    color : #007fff;
+    text-align :center;
+    font-size :75px;
+    /*font-style: 	Courier New;*/
+}
+.para {
+    margin: auto;
+    width: 647px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.color{
+    display: inline-block;
+    width: 290px;
+    height: 50px;
+    font-size: 30px;
+    margin-left: 260px;
+    border-radius: 10px;
+    padding: 6px;
+    margin-top: 30px;
+}
